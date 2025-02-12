@@ -1,0 +1,176 @@
+nav {
+  background-color: #2e3545;
+  height: auto;
+  color: #fff;
+  padding: 12px;
+  /* overflow: hidden; */
+  width: 100%;
+position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2000000;
+  transition: top 0.5s ease-in-out, left 0.5s ease-in-out;
+}
+.icons {
+  list-style: none;
+  position: relative;
+  overflow: hidden;
+  width: 56.5%;
+  text-align: center;
+}
+.left {
+  display: flex;
+  justify-content: flex-start;
+}
+.left .icons li {
+  display: inline-block;
+  margin-left: 10px;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  padding: 5px;
+  background-color: #363f51;
+  transition: 0.3s ease-in-out;
+  text-align: center;
+}
+.left .icons li:hover {
+  background-color: #0866ff;
+  transition: 0.3s ease-in-out;
+}
+.left .icons li box-icon {
+  margin: 5px;
+}
+
+/* ====================================== */
+.right {
+  display: flex;
+  justify-content: end;
+  margin-right: 35px;
+  flex-wrap: nowrap;
+  z-index: 999999999;
+  text-align: center;
+}
+.right .logo {
+  margin-left: 30px;
+  font-size: 25px;
+  font-weight: 800;
+  padding-bottom: 10px;
+}
+.right .Links > li {
+  margin-left: 20px;
+  display: inline-block;
+  position: relative;
+}
+.right .Links li box-icon {
+  color: #fff;
+  font-size: 30px;
+}
+.right .Links li span {
+  /* position: relative;
+  top: -5px; */
+  position: relative;
+  font-size: 25px;
+}
+.right .logo .en,
+.ar {
+  display: flex;
+}
+.right .logo .s1,
+.right .logo .s2,
+.right .logo .s3,
+.right .logo .s4 {
+  transition: transform 2s ease;
+}
+.right .logo {
+  font-size: 35px;
+  font-weight: bolder;
+  overflow: hidden;
+  height: 50px;
+}
+.right .logo .en .s1,
+.s3 {
+  margin-right: 5px;
+  animation-delay: 2s;
+}
+.right .logo:hover .s1 {
+  transform: translateY(-100px) rotate(45deg);
+  transition: transform 2s ease;
+}
+.right .logo:hover .s2 {
+  /* transform: rotate(45deg); */
+  transform: translateY(100px) rotate(-45deg);
+}
+.right .logo:hover .s3,
+.right .logo:hover .s4 {
+  transform: translateY(-60px);
+}
+.right .logo .en .s2,
+.s3 {
+  color: red;
+}
+/* ===========types=============== */
+.Links > li {
+  height: 35px;
+  /* overflow: hidden; */
+}
+.right .typefilms {
+  position: absolute;
+  color: #0866ff;
+  z-index: 99;
+  background-color: #242a36;
+  width: 100px;
+  top: 48px;
+  line-height: 80px;
+  width: 300px;
+  padding: 0;
+  /* left: -200px; */
+  text-align: left;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+  z-index: 9999;
+}
+.right .series .typefilms {
+  left: -200px;
+}
+.Links li .typefilms li {
+  background-color: #242a36;
+  color: #fff;
+  padding: 0 0 0 25px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.Links li .typefilms li:hover {
+  background-color: #363f51;
+  transition: 0.4s ease-in-out;
+}
+.Links .film:hover .typefilms,
+.Links .series:hover .typefilms {
+  opacity: 1;
+  transition: 0.4s ease-in-out;
+}
+/* =============side================== */
+.right button {
+  display: none;
+}
+@media (max-width: 992px) {
+  .Links {
+    display: none;
+  }
+  .right {
+    justify-content: center;
+  }
+  .right button {
+    display: block;
+    background-color: #2e3545;
+    padding-top: 11px;
+  }
+  .left {
+    text-align: center;
+    margin: auto;
+  }
+  .icons {
+    width: 82%;
+  }
+}
+.move {
+  right: 0;
+}

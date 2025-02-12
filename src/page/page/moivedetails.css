@@ -1,0 +1,131 @@
+.detailsonemoive {
+  background-color: #242a36;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  text-align: center;
+}
+.allabout{
+  padding: 0 !important;
+}
+.aboutfilm {
+  border: 1px solid #fff;
+  border-radius: 25px;
+  margin: 0 auto 150px;
+  width: 80%;
+
+  padding: 40px;
+}
+/* namethis
+rating
+update
+story */
+.namethis,
+.rating,
+.update {
+  padding: 20px;
+  border-bottom: 2px solid #fff;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+i {
+  margin: 0 5px;
+}
+span {
+  margin-left: 15px;
+}
+.detailstory {
+  font-size: 20px;
+}
+.fa-star {
+  color: #fdcc0d;
+}
+.buttonss {
+  position: relative;
+  bottom: -40px;
+  margin-bottom: 20px;
+}
+.buttonss .btn1,
+.buttonss .btn2 {
+  width: 100%;
+  font-size: 20px;
+  margin: 10px;
+  margin-left: 0;
+  font-weight: bolder;
+  font-size: 28px;
+  padding: 10px;
+  height: auto;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.buttonss .btn1 {
+  background: transparent;
+
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 1);
+
+  z-index: 999;
+}
+.buttonss .btn1::after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #414951;
+  z-index: -1;
+  opacity: 0.3;
+}
+.buttonss .btn1::before {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  background: linear-gradient(to right, #00c6a4, #009cf9);
+  z-index: -1;
+  transition: 0.8s ease-in-out;
+}
+.buttonss .btn1:hover {
+  box-shadow: none;
+  transition: 0.8s ease-in-out;
+  color: #fff;
+}
+.buttonss .btn1:hover::before {
+  width: 100%;
+  transition: 0.8s ease-in-out;
+}
+.buttonss .btn2 {
+  background: linear-gradient(to right, #00c6a4, #009cf9);
+  transition: 0.8s ease-in-out;
+}
+.buttonss .btn2::after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #414951;
+  z-index: -1;
+  opacity: 0.3;
+}
+.buttonss .btn2:hover {
+  background: linear-gradient(to left, transparent, transparent);
+  transition: 0.8s ease-in-out;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 1);
+  color: #fff;
+}
+.buttonss .btn2:hover::after {
+  width: 100%;
+  transition: 0.8s ease-in-out;
+}
+@media(max-width:992px){
+  .aboutfilm{
+    width: 90%;
+  }
+}

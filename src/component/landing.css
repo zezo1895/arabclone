@@ -1,0 +1,265 @@
+.landing::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 500px;
+
+  background: linear-gradient(to top, #242a36 35%, transparent);
+  bottom: -50px;
+  z-index: 999;
+}
+
+.landing {
+  position: relative;
+  margin-bottom: 50px;
+ 
+}
+
+.image {
+  position: relative;
+}
+
+.carousel-indicators {
+  z-index: 99999;
+}
+.img22 {
+  width: 100%;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 500;
+  right: 0;
+
+  background: linear-gradient(to right, transparent, #242a36);
+}
+.overlay2 {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  z-index: 500;
+  bottom: 0px;
+  background: linear-gradient(to bottom, transparent, #242a36);
+}
+.carousel-caption {
+  z-index: 9999;
+  bottom: 40%;
+}
+.carousel-caption .typedate {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+
+  margin-bottom: 25px;
+}
+.logo22 {
+  max-width: 20%;
+  margin-bottom: 50px;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  z-index: 9999;
+}
+.details {
+  /* height: 300px; */
+  font-size: 25px;
+  /* line-height: 80px; */
+  color: #dadada;
+  width: 50%;
+  text-align: center;
+  margin: auto;
+}
+.btn1 {
+  margin-right: 25px;
+}
+
+box-icon {
+  padding: 0;
+  margin: 0;
+}
+.buttons .btn1,
+.buttons .btn2 {
+  width: 30%;
+  font-weight: bolder;
+  font-size: 28px;
+  padding: 10px;
+  height: auto;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+/* #414951  */
+/* 00c6a4 */
+.buttons .btn1 {
+  background: transparent;
+
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 1);
+
+  z-index: 999;
+}
+.buttons .btn1::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #414951;
+  z-index: -1;
+  opacity: 0.3;
+}
+.buttons .btn1::before {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  background: linear-gradient(to right, #00c6a4, #009cf9);
+  z-index: -1;
+  transition: 0.8s ease-in-out;
+}
+.buttons .btn1:hover {
+  box-shadow: none;
+  transition: 0.8s ease-in-out;
+}
+.buttons .btn1:hover::before {
+  width: 100%;
+  transition: 0.8s ease-in-out;
+}
+.buttons .btn2 {
+  background: linear-gradient(to right, #00c6a4, #009cf9);
+  transition: 0.8s ease-in-out;
+}
+.buttons .btn2::after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #414951;
+  z-index: -1;
+  opacity: 0.3;
+}
+.buttons .btn2:hover {
+  background: linear-gradient(to left, transparent, transparent);
+  transition: 0.8s ease-in-out;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 1);
+}
+.buttons .btn2:hover::after {
+  width: 100%;
+  transition: 0.8s ease-in-out;
+}
+.buttons span {
+  width: 100px;
+}
+.carousel-indicators {
+  bottom: 100px;
+}
+
+.note {
+  width: 70%;
+  display: flex;
+  position: absolute;
+  z-index: 999999;
+  bottom: 25%;
+  left: 25%;
+}
+.note img {
+  width: 20%;
+  margin-right: 80px;
+}
+@media (max-width: 992px) {
+  .note {
+    left: 10%;
+  }
+
+  .typedate,
+  .details {
+    display: none;
+  }
+  .carousel-indicators {
+    bottom: 10px;
+    margin-bottom: 20px;
+  }
+  .buttons {
+    position: relative;
+    bottom: -40px;
+  }
+
+  .buttons .btn1,
+  .buttons .btn2 {
+    width: 250px;
+    font-size: 20px;
+    margin: 10px;
+    margin-left: 0;
+  }
+  .landing::after{
+    height: 250px;
+  }
+  .carousel-indicators{
+    bottom: -50px;
+  }
+}
+@media (max-width: 1200px) {
+  .buttons {
+    position: relative;
+    bottom: -100px;
+  }
+  .buttons .btn1,
+  .buttons .btn2 {
+    width: 300px;
+  }
+  .note {
+    bottom: 0;
+  }
+  .logo22 {
+    position: relative;
+    top: 160px;
+  }
+  .typedate {
+    position: relative;
+    top: 130px;
+  }
+  .details {
+    position: relative;
+    top: 100px;
+  }
+}
+
+/* .buttons .btn1,
+.buttons .btn2 {
+  width: 30%;
+  font-weight: bolder;
+  font-size: 28px;
+  padding: 10px;
+  height: auto;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+} */
+.fix {
+  width: 100%;
+  bottom: 40px;
+  right: 50px;
+  position: fixed;
+  z-index: 500;
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
+  transition: top 2s ease-in-out;
+  width: 75px;
+  height: 75px;
+  background: linear-gradient(to right, #00c6a4, #009cf9);
+  border-radius: 50%;
+  opacity: .5;
+  transition: .2s ease-in-out;
+}
+.fix:hover{
+  opacity: 1;
+  transition: .2s ease-in-out;
+}

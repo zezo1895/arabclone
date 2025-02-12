@@ -1,0 +1,16 @@
+.detailsmoive {
+  width: 100%;
+  height: 75%;
+  background-color: aqua;
+
+  
+}
+.detailsonemoive {
+  /* background-color: #242a36; */
+  width: 100%;
+  height: 100%;
+  background-color: rgb(13, 0, 255);
+ position: relative;
+ /* z-index: 65465415613456123165; */
+
+}

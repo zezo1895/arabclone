@@ -1,0 +1,68 @@
+.imgfilm {
+  max-width: 100%;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  position: relative;
+  transition: .4s;
+  box-shadow: 1px 1px 10px  #009cf9;
+}
+.imagefilm {
+  position: relative;
+  left: 0;
+}
+
+.boxfilm {
+  width: 200px;
+  height: 400px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  margin: 15px auto;
+  transition: .3s;
+  
+}
+.boxfilm:hover{
+   scale: 1.1;
+
+}
+.boxfilm:hover .imgfilm{
+  box-shadow: 2px 2px 40px  #00c6a4;
+}
+.boxfilm::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 75px;
+  background: linear-gradient(to bottom, transparent, #000 90%);
+  bottom: 100px;
+  left: 0;
+  border: 2px solid transparent;
+  border-radius: 0 0 20px 20px;
+  border-top: none;
+}
+.show .namefilm {
+  font-size: 17px;
+}
+.willshow {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 10px;
+  width: 181px;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  height: 280px;
+  left: 10px;
+  padding-top: 125px;
+  opacity: 0;
+  transition: 0.6s ease-in-out;
+}
+.willshow .info {
+  font-size: 20px;
+}
+.willshow:hover {
+  opacity: 1;
+  transition: 0.6s ease-in-out;
+}
+.namefilm {
+  margin-top: 5px;
+}

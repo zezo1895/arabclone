@@ -1,0 +1,78 @@
+sidenav {
+  background-color: aqua;
+  width: 50%;
+  position: fixed;
+  z-index: 99999999;
+  height: 100%;
+  text-align: center;
+  margin: auto;
+  background-color: #242a36;
+  color: #fff;
+  /* right: 0; */
+  transition: 0.5s ease-in-out;
+  right: -50%;
+  display: flex;
+  top: 0;
+}
+
+h1 span {
+  color: red;
+}
+h1 {
+  font-weight: 700;
+}
+
+.types {
+  position: relative;
+  bottom: 150px;
+}
+.all {
+  display: flex;
+
+  height: 100%;
+}
+.all .types > li {
+  font-size: 25px;
+  font-weight: 600;
+  position: relative;
+  /* margin-top: 25px; */
+  color: red;
+}
+.all .types > li button {
+  background: transparent;
+  color: red;
+  width: 155px;
+}
+.all .types > li:nth-child(3) {
+  width: 155px;
+  /* top: 500px; */
+}
+
+.all .types > li:nth-child(3) span {
+  color: red;
+  margin: 0;
+}
+.typefilm,
+.typeser {
+  position: absolute;
+  color: #fff;
+  text-align: center;
+  left: 0px;
+  opacity: 0;
+}
+.typefilm li,
+.typeser li {
+  margin-top: 25px;
+}
+.show {
+  opacity: 1;
+  position: relative;
+}
+.all .types > li box-icon {
+  font-size: 10px;
+  padding: 5px;
+}
+.active-class {
+  right: 0px;
+  transition: 0.5s ease-in-out;
+}
