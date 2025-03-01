@@ -30,7 +30,7 @@ const Moivedetails = () => {
   }
   const urlim = "https://image.tmdb.org/t/p/w500/";
   return (
-    <div className="detailsonemoive">
+    <div style={{ marginTop:"85px" }} className="detailsonemoive">
       <div className="container-fluid">
         <div className="row allabout">
           <div className="col-lg-12 d-flex justify-content-center">
