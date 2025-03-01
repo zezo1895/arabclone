@@ -144,7 +144,9 @@ function App() {
       
       {/* هنا يمكن إضافة حالة التحميل */}
       {isLoading ? (
-        <div className="loading-spinner" style={{ width:"100%", height:"100vh", textAlign:"center", margin:"0 auto", display:"flex", justifyContent:'center', alignItems:'center', fontSize:"5rem", fontWeight:800, backgroundColor:"#242a36", color:"#009cf9", letterSpacing:"20px" }}>Loading....</div>
+       <div className="loading-container">
+       <div className="spinner"></div>
+     </div>
       ) : (
         <AnimatePresence mode="wait" initial={true}>
           <RouterProvider router={routes} />
